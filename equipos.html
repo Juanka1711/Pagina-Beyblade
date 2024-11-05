@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyblade G-Revolution</title>
+    <link rel="icon" href="assets/16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo pagina.jpg" alt="Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="capitulos.html">Capitulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipos.html">Equipos</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-auto">
+                    <button class="btn btn-outline-light ms-2" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button id="dark-mode-toggle" class="btn btn-outline-light ms-auto">
+                        <i class="fas fa-moon"></i> 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal de búsqueda -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">Buscar Equipos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Escribe el nombre del equipo...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="searchButton">Buscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+ 
+<main>
+    <section id="equipos" class="mt-4">
+        <h2>Equipos de Beyblade G-Revolution</h2>
+        <div class="row" id="equiposContainer">
+            <!-- Tarjeta para BBA Revolution -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/bba_revolution.jpg" class="card-img-top" alt="BBA Revolution">
+                    <div class="card-body">
+                        <h5 class="card-title">BBA Revolution</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBBA">Más Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta para White Tiger X -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/white_tiger_x.jpg" class="card-img-top" alt="White Tiger X">
+                    <div class="card-body">
+                        <h5 class="card-title">White Tiger X</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalWhiteTiger">Más Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta para PPB All Starz -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/ppb_all_starz.jpg" class="card-img-top" alt="PPB All Starz">
+                    <div class="card-body">
+                        <h5 class="card-title">PPB All Starz</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPPB">Más Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta para Blitzkrieg Boys -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/blitzkrieg_boys.jpg" class="card-img-top" alt="Blitzkrieg Boys">
+                    <div class="card-body">
+                        <h5 class="card-title">Blitzkrieg Boys</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBlitzkrieg">Más Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta para F-Dynasty -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/f_dynasty.jpg" class="card-img-top" alt="F-Dynasty">
+                    <div class="card-body">
+                        <h5 class="card-title">F-Dynasty</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFDynasty">Más Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta para Barthez Battalion -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/barthez_battalion.jpg" class="card-img-top" alt="Barthez Battalion">
+                    <div class="card-body">
+                        <h5 class="card-title">Barthez Battalion</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBarthez">Más Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta para BEGA Team -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="assets/bega_team.jpg" class="card-img-top" alt="BEGA Team">
+                    <div class="card-body">
+                        <h5 class="card-title">BEGA Team</h5>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBEGA">Más Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modales -->
+        <!-- Modal para BBA Revolution -->
+        <div class="modal fade" id="modalBBA" tabindex="-1" aria-labelledby="modalBBA" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">BBA Revolution</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Información sobre BBA Revolution...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para White Tiger X -->
+        <div class="modal fade" id="modalWhiteTiger" tabindex="-1" aria-labelledby="modalWhiteTiger" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">White Tiger X</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Información sobre White Tiger X...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para PPB All Starz -->
+        <div class="modal fade" id="modalPPB" tabindex="-1" aria-labelledby="modalPPB" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">PPB All Starz</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Información sobre PPB All Starz...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para Blitzkrieg Boys -->
+        <div class="modal fade" id="modalBlitzkrieg" tabindex="-1" aria-labelledby="modalBlitzkrieg" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Blitzkrieg Boys</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Información sobre Blitzkrieg Boys...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para F-Dynasty -->
+        <div class="modal fade" id="modalFDynasty" tabindex="-1" aria-labelledby="modalFDynasty" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">F-Dynasty</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Información sobre F-Dynasty...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para Barthez Battalion -->
+        <div class="modal fade" id="modalBarthez" tabindex="-1" aria-labelledby="modalBarthez" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Barthez Battalion</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Información sobre Barthez Battalion...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para BEGA Team -->
+        <div class="modal fade" id="modalBEGA" tabindex="-1" aria-labelledby="modalBEGA" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">BEGA Team</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Información sobre BEGA Team...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

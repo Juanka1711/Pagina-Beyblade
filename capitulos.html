@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyblade G-Revolution</title>
+    <link rel="icon" href="assets/16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo pagina.jpg" alt="Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="capitulos.html">Capitulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipos.html">Equipos</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-auto">
+                <!--Buscador-->
+                <button class="btn btn-outline-light ms-2" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fas fa-search"></i>
+              <!-- Botón de modo oscuro -->
+              <button id="dark-mode-toggle" class="btn btn-outline-light ms-auto">
+                <i class="fas fa-moon"></i> 
+            </button>
+        </div>
+    </div>
+    </nav>
+
+    <div class="banner"></div>
+
+<!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Buscar Episodios</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="search-input" class="form-control" placeholder="Escribe para buscar...">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button id="search-button" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+     
+    <main>
+  </div>
+  <section id="episodios" class="mt-4">
+      <h2>Episodios</h2>
+      <div class="row" id="episodiosContainer">
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=myIIUc6DmaE&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 1: El regreso de los Bladers</h5>
+                          <p class="card-text">Después de la última batalla, Tyson y su equipo se preparan para enfrentarse a nuevos retos en el mundo de Beyblade.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=H4aHWJGKqC4&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=2" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 2: La llegada de BEGA</h5>
+                          <p class="card-text">La misteriosa organización BEGA llega a la ciudad, trayendo desafíos inesperados para Tyson y sus amigos.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=wPePqQveOG8&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=3" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 3: La batalla de los Bladers</h5>
+                          <p class="card-text">Un torneo se organiza para decidir quién es el mejor Blader. Tyson debe luchar contra sus amigos y enemigos para avanzar.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=yqE6sHx4ll8&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=4" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 4: La nueva técnica de Tyson</h5>
+                          <p class="card-text">Tyson descubre una nueva técnica que podría cambiar el curso de la batalla.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=1VlNA7dWwL8&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=5" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 5: Un desafío inesperado</h5>
+                          <p class="card-text">Tyson se enfrenta a un adversario desconocido que lo pone a prueba.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=O5iyZ4QnjYs&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=6" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 6: La amistad en el campo de batalla</h5>
+                          <p class="card-text">La amistad entre los Bladers se pone a prueba en la competencia.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=hlIzNl7IeDc&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=7" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 7: El regreso de un antiguo rival</h5>
+                          <p class="card-text">Un viejo rival regresa para desafiar a Tyson.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=qUhmUC7hUKI&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=8" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 8: La batalla en el desierto</h5>
+                          <p class="card-text">Tyson y su equipo enfrentan un reto en un ambiente extremo.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=Y55GEhIeR_c&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=9" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 9: La unión hace la fuerza</h5>
+                          <p class="card-text">Los Bladers aprenden el valor del trabajo en equipo.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=abl51dFoOl4&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=10" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 10: La batalla final</h5>
+                          <p class="card-text">Tyson se enfrenta a su mayor desafío en la competición.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=MRVfZlNSUOs&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=11" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 11: La llegada del nuevo adversario</h5>
+                          <p class="card-text">Un nuevo Blader llega al torneo, causando revuelo.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=SBgEDydPGbM&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=12" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 12: El duelo de los titanes</h5>
+                          <p class="card-text">Tyson enfrenta a un Blader con habilidades extraordinarias.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=HUi1siTIys4&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=13" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 13: El secreto del nuevo Blader</h5>
+                          <p class="card-text">Tyson descubre el secreto detrás de las habilidades de su adversario.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=9sFauYOPkzY&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=14" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 14: La batalla por la amistad</h5>
+                          <p class="card-text">Tyson y sus amigos deben unirse para superar sus diferencias.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=WeeuFAKokQM&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=15" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 15: La estrategia de ataque</h5>
+                          <p class="card-text">El equipo elabora una estrategia para enfrentar a su adversario.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=-MILHNgHgLw&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=16" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 16: La prueba del fuego</h5>
+                          <p class="card-text">Tyson debe demostrar su valentía en una competencia intensa.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=m-KVoow4BpM&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=17" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 17: Un nuevo poder</h5>
+                          <p class="card-text">Tyson descubre un nuevo poder dentro de él que lo impulsa.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=NsHK2M9T60k&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=18" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 18: La batalla en el bosque</h5>
+                          <p class="card-text">Los Bladers se enfrentan a un entorno difícil durante la competencia.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=BKlnjKRxZXQ&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=19" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 19: La revelación</h5>
+                          <p class="card-text">Un secreto importante sale a la luz, cambiando la dinámica del equipo.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=Om0XY6vX_Hw&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=20" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 20: La batalla en el aire</h5>
+                          <p class="card-text">Una competencia aérea pone a prueba las habilidades de los Bladers.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=gQjtryfHbEc&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=21" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 21: El regreso del campeón</h5>
+                          <p class="card-text">El campeón del torneo anterior vuelve para desafiar a Tyson.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=yTm0ikYVwSc&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=22" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 22: La batalla de los elementos</h5>
+                          <p class="card-text">Los elementos de la naturaleza influyen en la competencia de los Bladers.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=sAp4yyGvmNY&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=23" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 23: El duelo decisivo</h5>
+                          <p class="card-text">Tyson debe tomar decisiones difíciles en medio del torneo.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=TBqzJ6n1JHo&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=24" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 24: La lucha por la victoria</h5>
+                          <p class="card-text">Los Bladers luchan por alcanzar la cima en la competición.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=PhSg-qMD9xg&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=25" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 25: Un nuevo comienzo</h5>
+                          <p class="card-text">El equipo inicia una nueva fase en su trayectoria como Bladers.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=6ht5p7xTvDM&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=26" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 26: La batalla del futuro</h5>
+                          <p class="card-text">Los Bladers se enfrentan a nuevos desafíos en el horizonte.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=LMeRXNAp4KI&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=27" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 27: El legado de los Bladers</h5>
+                          <p class="card-text">Tyson y su equipo reflexionan sobre su camino hasta ahora.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=VHD_NaTcCIA&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=28" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 28: La gran final</h5>
+                          <p class="card-text">La final del torneo trae consigo momentos de alta tensión.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=3LAiLPoS4iE&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=29" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 29: La amistad es la clave</h5>
+                          <p class="card-text">Los Bladers aprenden que la amistad es lo más importante.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=J_SYq1j4AbM&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=30" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 30: La batalla de la historia</h5>
+                          <p class="card-text">Un torneo histórico desafía a todos los Bladers a dar lo mejor de sí.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=vHC91K-3gxI&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=31" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 31: Nuevos comienzos</h5>
+                          <p class="card-text">Tyson y su equipo se preparan para nuevos retos en su camino.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=-2lvsDEbb4w&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=32" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 32: La batalla del legado</h5>
+                          <p class="card-text">El legado de los Bladers pasados influye en la competición actual.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=ipyTZB5rPCU&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=33" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 33: El desafío de la amistad</h5>
+                          <p class="card-text">La amistad es puesta a prueba en medio de la competencia.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=x-oIZPLzafo&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=34" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 34: La batalla de los sueños</h5>
+                          <p class="card-text">Los sueños de los Bladers se convierten en realidad en esta emocionante batalla.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=cIkGcZpqvYI&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=35" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 35: Un giro inesperado</h5>
+                          <p class="card-text">Un giro inesperado cambia el rumbo del torneo.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=a1GZECuAzRQ&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=36" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 36: La unión de los Bladers</h5>
+                          <p class="card-text">Los Bladers deben unirse para enfrentar un desafío mayor.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=OhNH-D3vnVc&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=37" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 37: La batalla final del torneo</h5>
+                          <p class="card-text">El torneo llega a su clímax con la batalla final entre los mejores Bladers.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=7Xp1XvIQADU&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=38" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 38: El legado continúa</h5>
+                          <p class="card-text">Los Bladers reflexionan sobre su legado y futuro en la competición.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=CY3_tZlSfGE&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=39" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 39: La amistad es la clave del triunfo</h5>
+                          <p class="card-text">El triunfo es un reflejo del valor de la amistad entre los Bladers.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=qFuIeyyt1ik&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=40" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 40: El regreso a la competición</h5>
+                          <p class="card-text">Tyson y su equipo regresan para demostrar su valía en la competencia.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=_X5rB55hzCw&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=41" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 41: El desafío de los nuevos Bladers</h5>
+                          <p class="card-text">Nuevos Bladers desafían a Tyson y su equipo en la nueva competición.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=SrOD_mSPwq0&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=42" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 42: El encuentro inesperado</h5>
+                          <p class="card-text">Tyson se encuentra con un viejo rival en medio de la nueva competición.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=HT5pKbyPksc&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=43" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 43: La batalla de los recuerdos</h5>
+                          <p class="card-text">Los recuerdos del pasado influyen en el presente de los Bladers.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=chzYm_l4COY&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=44" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 44: La fuerza de la unión</h5>
+                          <p class="card-text">La unión del equipo es crucial para enfrentar a sus adversarios.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=zudqmEenpbM&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=45" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 45: La batalla del honor</h5>
+                          <p class="card-text">Los Bladers luchan por el honor y el respeto en la competencia.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=GDE9xV1Q-wU&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=46" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 46: El camino hacia la victoria</h5>
+                          <p class="card-text">El camino hacia la victoria es un viaje lleno de desafíos.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=c_mDA8dt6T8&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=47" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 47: La batalla del futuro</h5>
+                          <p class="card-text">Los Bladers se preparan para enfrentar un futuro incierto.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=7jIsdyMgrPo&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=48" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 48: El legado de los Bladers</h5>
+                          <p class="card-text">El legado de los Bladers sigue vivo en la nueva generación.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=i3tmAjKr9aI&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=49" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 49: La última batalla</h5>
+                          <p class="card-text">La última batalla representa todo lo que han aprendido los Bladers.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4">
+                  <div class="card-body d-flex align-items-center">
+                      <a href="https://www.youtube.com/watch?v=bz2R2vkpAYY&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=50" target="_blank">
+                          <i class="fas fa-play-circle fa-2x me-3"></i>
+                      </a>
+                      <div>
+                          <h5 class="card-title">Episodio 50: El fin y el comienzo</h5>
+                          <p class="card-text">Un final emocionante que sienta las bases para nuevas aventuras.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card mb-4">
+          <div class="card-body d-flex align-items-center">
+              <a href="https://www.youtube.com/watch?v=o2KR2-LGRsM&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=51" target="_blank">
+                  <i class="fas fa-play-circle fa-2x me-3"></i>
+              </a>
+              <div>
+                  <h5 class="card-title">Episodio 51: La nueva generación de Bladers </h5>
+                  <p class="card-text">La nueva generación de Bladers toma el escenario, mostrando sus habilidades y destrezas.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-4">
+      <div class="card mb-4">
+          <div class="card-body d-flex align-items-center">
+              <a href="https://www.youtube.com/watch?v=ZR53V61W4lk&list=PLOnwY3OTHu-sPavliu2G9GUL2Se2bdne9&index=52" target="_blank">
+                  <i class="fas fa-play-circle fa-2x me-3"></i>
+              </a>
+              <div>
+                  <h5 class="card-title">Episodio 52: El futuro de los Bladers</h5>
+                  <p class="card-text">Un emocionante final que deja entrever el futuro prometedor de los Bladers.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </section>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+
+
+</html>
+    
+
